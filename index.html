@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajout de tâches</title>
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Styles gardés des deux branches -->
     <link rel="stylesheet" href="ft.css">
@@ -20,8 +21,26 @@
 
         <div id="taskList"></div>
 
-        <script src="code.js"></script>
-    </main>
+        <script src="script.js"></script>
+
+        <div class="app">
+    <h1>Mes tâches</h1>
+
+    <div class="task-input">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Saisissez une tâche..."
+      />
+      <button id="addTaskBtn">Ajouter</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+
+ </main>
 
     <footer>
         <img src="Image.png" alt="logo dakartech" width="100" height="100">
