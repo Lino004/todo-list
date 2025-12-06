@@ -8,17 +8,43 @@
 </head>
 <body>
     <h1>To-Do liste</h1>
+
     <div class="contener">
         <div class="tache">
-            <input type="text" placeholder="Ecrir le nom de la tache ici" id="taskinput">
-            <button onclick="addTask">+<ion-icon name="add-circle-outline"></ion-icon></button>
+            <input type="text" placeholder="Écrire le nom de la tâche ici" id="taskinput">
+            <button onclick="addTask()">+</button>
         </div>
         
         <div class="list">
-            <ul id="tasklist">
-                
-            </ul>
+            <ul id="tasklist"></ul>
         </div>
     </div>
+
+    <!-- 🔥 JAVASCRIPT ICI -->
+    <script src="script.js">
+        function addTask() {
+    let input = document.getElementById("taskinput");
+    let taskText = input.value.trim();
+    let taskList = document.getElementById("tasklist");
+
+    // Vérifie si vide
+    if (taskText === "") {
+        alert("Veuillez entrer une tâche !");
+        return;
+    }
+
+    // Crée un nouvel élément <li>
+    let li = document.createElement("li");
+    li.textContent = taskText;
+
+    // Ajoute la tâche dans la liste
+    taskList.appendChild(li);
+
+    // Vide l'input après ajout
+    input.value = "";
+}
+
+    </script>
+
 </body>
 </html>

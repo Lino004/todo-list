@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(7, 188, 188);
+    align-items: center;
+    background-color: rgb(145, 209, 209);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -19,3 +20,17 @@ body{
     
 
 }
+button{
+    color: rgb(203, 203, 205);
+    background-color: rgb(6, 3, 3);
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;   
+}
+input{
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+}
+
