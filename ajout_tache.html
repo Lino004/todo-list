@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to-do_liste</title>
+    <title>Liste de tâches</title>
 </head>
+
 <body>
-    <h1>To-Do liste</h1>
+    <h1>Liste de tâches</h1>
 
     <div class="contener">
         <div class="tache">
             <input type="text" placeholder="Écrire le nom de la tâche ici" id="taskinput">
-            <button onclick="addTask()">+</button>
+            
+            <button onclick="addTask()" id="button">
+                Ajouter
+            </button>
         </div>
-        
+
         <div class="list">
             <ul id="tasklist"></ul>
         </div>
     </div>
 
-    <!-- 🔥 JAVASCRIPT ICI -->
-    <script src="script.js">
+    <script>
         function addTask() {
-    let input = document.getElementById("taskinput");
-    let taskText = input.value.trim();
-    let taskList = document.getElementById("tasklist");
+            let input = document.getElementById("taskinput");
+            let taskText = input.value.trim();
+            let taskList = document.getElementById("tasklist");
 
-    // Vérifie si vide
-    if (taskText === "") {
-        alert("Veuillez entrer une tâche !");
-        return;
-    }
+            if (taskText === "") {
+                alert("Veuillez entrer une tâche !");
+                return;
+            }
 
-    // Crée un nouvel élément <li>
-    let li = document.createElement("li");
-    li.textContent = taskText;
+            let li = document.createElement("li");
+            li.textContent = taskText;
 
-    // Ajoute la tâche dans la liste
-    taskList.appendChild(li);
+            taskList.appendChild(li);
 
-    // Vide l'input après ajout
-    input.value = "";
-}
-
+            input.value = "";
+        }
     </script>
 
 </body>
+
 </html>
