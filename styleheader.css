@@ -1,0 +1,41 @@
+.site-header {
+    background-image: url('wi.jfif');
+    color: #0c2e55;
+    padding: 30px 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-banner {
+    height: 250px;
+    background-image: url('todo.png');
+    background-position: center;
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #003d80;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+nav a {
+    color: #F9F7F2;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
