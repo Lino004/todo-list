@@ -1,0 +1,71 @@
+/* --- BODY --- */
+body {
+    background-color: rgb(145, 209, 209);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- CONTENEUR PRINCIPAL --- */
+.contener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* --- ZONE SAISIE --- */
+.tache {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- INPUT --- */
+input {
+    font-size: 17px;
+    width: 350px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 10px;
+}
+
+/* --- BOUTON --- */
+button {
+    color: rgb(20, 20, 25);
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    height: 38px;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(58, 143, 89);
+}
+
+/* --- LISTE DES TACHES --- */
+.list ul {
+    margin-top: 20px;
+    padding: 0;
+    width: 350px;
+}
+
+/* Chaque tâche */
+.list ul li {
+    list-style: none;
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}

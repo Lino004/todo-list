@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de tâches</title>
+</head>
+
+<body>
+    <h1>Liste de tâches</h1>
+
+    <div class="contener">
+        <div class="tache">
+            <input type="text" placeholder="Écrire le nom de la tâche ici" id="taskinput">
+            
+            <button onclick="addTask()" id="button">
+                Ajouter
+            </button>
+        </div>
+
+        <div class="list">
+            <ul id="tasklist"></ul>
+        </div>
+    </div>
+
+    <script>
+        function addTask() {
+            let input = document.getElementById("taskinput");
+            let taskText = input.value.trim();
+            let taskList = document.getElementById("tasklist");
+
+            if (taskText === "") {
+                alert("Veuillez entrer une tâche !");
+                return;
+            }
+
+            let li = document.createElement("li");
+            li.textContent = taskText;
+
+            taskList.appendChild(li);
+
+            input.value = "";
+        }
+    </script>
+
+</body>
+
+</html>
